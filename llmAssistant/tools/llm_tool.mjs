@@ -35,8 +35,8 @@ function normalizeInput(envelope) {
       current = current.input;
       continue;
     }
-    if (current.arguments && typeof current.arguments === 'object') {
-      current = current.arguments;
+    if (current[arguments] && typeof current[arguments] === 'object') {
+      current = current[arguments];
       continue;
     }
     if (current.params?.arguments && typeof current.params.arguments === 'object') {
