@@ -48,3 +48,7 @@ Supported provider variables:
 
 - `llm_autocomplete` expects full file content and a cursor offset, then returns only the insertion text.
 - `git_commit_message` and `llm_resolve_conflict` are shared helpers that can be reused by Git-oriented UIs or agents.
+
+## Documentation
+
+- [LA01 - LLM Assistant Overview](./docs/specs/LA/LA01-agent-overview.md)
