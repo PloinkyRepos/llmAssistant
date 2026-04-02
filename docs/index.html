@@ -40,35 +40,9 @@
                 </section>
 
                 <section class="highlight-box">
-                    <h3>What this agent does</h3>
-                    <ul>
-                        <li>Acts as intermediary between UI/agent requests and default Achilles LLM runtime calls.</li>
-                        <li>Exposes a finite MCP contract from <code>llmAssistant/mcp-config.json</code>.</li>
-                        <li>Normalizes MCP envelopes and validates tool inputs before LLM dispatch.</li>
-                        <li>Provides reusable helper outputs for Git and editor workflows.</li>
-                    </ul>
-                </section>
-
-                <section>
-                    <h2>Documentation Map</h2>
-                    <div class="grid">
-                        <article>
-                            <h3>Architecture</h3>
-                            <p>Component boundaries and intermediary responsibilities are documented in <a href="architecture.html">Architecture</a>.</p>
-                        </article>
-                        <article>
-                            <h3>Execution Workflow</h3>
-                            <p>Per-call dispatch flow and response lifecycle are documented in <a href="execution-workflow.html">Tool Execution Workflow</a>.</p>
-                        </article>
-                        <article>
-                            <h3>MCP Surface</h3>
-                            <p>Tool contracts and input requirements are listed in <a href="mcp-tools.html">MCP Tools</a>.</p>
-                        </article>
-                        <article>
-                            <h3>Configuration</h3>
-                            <p>Runtime profile and provider variable behavior are documented in <a href="configuration.html">Manifest and Environment</a>.</p>
-                        </article>
-                    </div>
+                    <h3>Operational Role</h3>
+                    <p><code>llmAssistant</code> intermediates between caller requests and Achilles default LLM runtime execution by exposing a finite MCP contract from <code>llmAssistant/mcp-config.json</code>.</p>
+                    <p>The agent normalizes MCP envelopes, validates input before model execution, and returns reusable helper outputs for editor and Git workflows without leaking provider-specific details into clients.</p>
                 </section>
 
                 <section>

@@ -69,21 +69,12 @@
 
                 <section>
                     <h2>Contract Characteristics</h2>
-                    <ul>
-                        <li>Autocomplete returns insertion content only, not full rewritten file output.</li>
-                        <li>Commit-message output is plain message text shaped for Git usage.</li>
-                        <li>Conflict resolver prefers deterministic merge before LLM fallback.</li>
-                        <li>All tool failures return explicit JSON with <code>ok: false</code>.</li>
-                    </ul>
+                    <p>Autocomplete returns insertion content instead of full-file rewrites, commit-message generation returns plain Git-ready text, and conflict resolution uses deterministic merge before model fallback. All failures are returned as explicit JSON with <code>ok: false</code>.</p>
                 </section>
 
                 <section>
                     <h2>Execution Notes</h2>
-                    <ul>
-                        <li>Tools are provider-agnostic through Achilles default agent registration.</li>
-                        <li>Prompt sizes are bounded by internal clipping constants in dispatcher logic.</li>
-                        <li>MCP callers consume normalized output fields instead of provider-specific responses.</li>
-                    </ul>
+                    <p>Tools remain provider-agnostic through Achilles default agent registration, prompt sizes are bounded by dispatcher clipping constants, and MCP callers consume normalized output fields rather than provider-native response structures.</p>
                 </section>
             </div>
         </div>
